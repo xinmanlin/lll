@@ -1,0 +1,155 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.cute-container {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cute-title {
+  font-size: 3.5em;
+  line-height: 1.2;
+  background: linear-gradient(135deg, #ff9ec8, #ffb3d9, #ffc0e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(255, 192, 203, 0.3);
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.sparkle {
+  display: inline-block;
+  animation: sparkle 1.5s infinite;
+  font-size: 0.9em;
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.2) rotate(180deg);
+  }
+}
+
+.cute-card {
+  padding: 2.5em;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(255, 192, 203, 0.4);
+  margin: 2rem 0;
+  backdrop-filter: blur(10px);
+  border: 3px solid rgba(255, 182, 193, 0.5);
+}
+
+.cute-button {
+  border-radius: 50px;
+  border: 3px solid #ffb6c1;
+  padding: 1.2em 2.5em;
+  font-size: 1.2em;
+  font-weight: 600;
+  font-family: inherit;
+  background: linear-gradient(135deg, #ffb6c1, #ffc0cb, #ffd1dc);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 182, 193, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.cute-button:hover {
+  transform: scale(1.05) translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 182, 193, 0.7);
+  background: linear-gradient(135deg, #ffc0cb, #ffd1dc, #ffe4e6);
+}
+
+.cute-button:active {
+  transform: scale(0.98);
+}
+
+.button-emoji {
+  display: inline-block;
+  animation: wiggle 0.5s ease-in-out infinite;
+  margin: 0 0.3em;
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+}
+
+.count-display {
+  display: block;
+  margin-top: 0.5em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ff69b4;
+  text-shadow: 1px 1px 2px rgba(255, 105, 180, 0.3);
+}
+
+.cute-text {
+  margin-top: 1.5em;
+  font-size: 1.1em;
+  color: #d63384;
+  font-weight: 500;
+}
+
+.cute-footer {
+  color: #ff69b4;
+  font-size: 1.2em;
+  margin-top: 2rem;
+  font-weight: 500;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
